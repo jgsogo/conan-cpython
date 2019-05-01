@@ -29,5 +29,5 @@ class CPython(ConanFile):
         autotools.install()
 
     def package_info(self):
-        self.cpp_info.libs = ["python3.7m",]
+        self.cpp_info.libs = ["python3.7m", "intl", ]  # TODO: Handle intl
         self.cpp_info.includedirs = ["include/python3.7m", ]
